@@ -30,6 +30,15 @@ public class WeatherServiceGrpc {
               "weather.WeatherService", "getWeatherByWeek"),
           io.grpc.protobuf.ProtoUtils.marshaller(com.frostwolf.grpc.test.Week.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.frostwolf.grpc.test.Weather.getDefaultInstance()));
+  @io.grpc.ExperimentalApi
+  public static final io.grpc.MethodDescriptor<com.frostwolf.grpc.test.User,
+      com.frostwolf.grpc.test.User> METHOD_LOGIN =
+      io.grpc.MethodDescriptor.create(
+          io.grpc.MethodDescriptor.MethodType.UNARY,
+          generateFullMethodName(
+              "weather.WeatherService", "login"),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.frostwolf.grpc.test.User.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.frostwolf.grpc.test.User.getDefaultInstance()));
 
   public static WeatherServiceStub newStub(io.grpc.Channel channel) {
     return new WeatherServiceStub(channel);
@@ -49,17 +58,25 @@ public class WeatherServiceGrpc {
 
     public void getWeatherByWeek(com.frostwolf.grpc.test.Week request,
         io.grpc.stub.StreamObserver<com.frostwolf.grpc.test.Weather> responseObserver);
+
+    public void login(com.frostwolf.grpc.test.User request,
+        io.grpc.stub.StreamObserver<com.frostwolf.grpc.test.User> responseObserver);
   }
 
   public static interface WeatherServiceBlockingClient {
 
     public com.frostwolf.grpc.test.Weather getWeatherByWeek(com.frostwolf.grpc.test.Week request);
+
+    public com.frostwolf.grpc.test.User login(com.frostwolf.grpc.test.User request);
   }
 
   public static interface WeatherServiceFutureClient {
 
     public com.google.common.util.concurrent.ListenableFuture<com.frostwolf.grpc.test.Weather> getWeatherByWeek(
         com.frostwolf.grpc.test.Week request);
+
+    public com.google.common.util.concurrent.ListenableFuture<com.frostwolf.grpc.test.User> login(
+        com.frostwolf.grpc.test.User request);
   }
 
   public static class WeatherServiceStub extends io.grpc.stub.AbstractStub<WeatherServiceStub>
@@ -85,6 +102,13 @@ public class WeatherServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_WEATHER_BY_WEEK, getCallOptions()), request, responseObserver);
     }
+
+    @java.lang.Override
+    public void login(com.frostwolf.grpc.test.User request,
+        io.grpc.stub.StreamObserver<com.frostwolf.grpc.test.User> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(METHOD_LOGIN, getCallOptions()), request, responseObserver);
+    }
   }
 
   public static class WeatherServiceBlockingStub extends io.grpc.stub.AbstractStub<WeatherServiceBlockingStub>
@@ -108,6 +132,12 @@ public class WeatherServiceGrpc {
     public com.frostwolf.grpc.test.Weather getWeatherByWeek(com.frostwolf.grpc.test.Week request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_WEATHER_BY_WEEK, getCallOptions(), request);
+    }
+
+    @java.lang.Override
+    public com.frostwolf.grpc.test.User login(com.frostwolf.grpc.test.User request) {
+      return blockingUnaryCall(
+          getChannel(), METHOD_LOGIN, getCallOptions(), request);
     }
   }
 
@@ -134,9 +164,17 @@ public class WeatherServiceGrpc {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_WEATHER_BY_WEEK, getCallOptions()), request);
     }
+
+    @java.lang.Override
+    public com.google.common.util.concurrent.ListenableFuture<com.frostwolf.grpc.test.User> login(
+        com.frostwolf.grpc.test.User request) {
+      return futureUnaryCall(
+          getChannel().newCall(METHOD_LOGIN, getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_GET_WEATHER_BY_WEEK = 0;
+  private static final int METHODID_LOGIN = 1;
 
   private static class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -157,6 +195,10 @@ public class WeatherServiceGrpc {
         case METHODID_GET_WEATHER_BY_WEEK:
           serviceImpl.getWeatherByWeek((com.frostwolf.grpc.test.Week) request,
               (io.grpc.stub.StreamObserver<com.frostwolf.grpc.test.Weather>) responseObserver);
+          break;
+        case METHODID_LOGIN:
+          serviceImpl.login((com.frostwolf.grpc.test.User) request,
+              (io.grpc.stub.StreamObserver<com.frostwolf.grpc.test.User>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -183,6 +225,13 @@ public class WeatherServiceGrpc {
               com.frostwolf.grpc.test.Week,
               com.frostwolf.grpc.test.Weather>(
                 serviceImpl, METHODID_GET_WEATHER_BY_WEEK)))
+        .addMethod(
+          METHOD_LOGIN,
+          asyncUnaryCall(
+            new MethodHandlers<
+              com.frostwolf.grpc.test.User,
+              com.frostwolf.grpc.test.User>(
+                serviceImpl, METHODID_LOGIN)))
         .build();
   }
 }

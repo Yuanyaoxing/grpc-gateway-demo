@@ -40,7 +40,7 @@ import static java.util.concurrent.TimeUnit.NANOSECONDS;
  */
 @SuppressWarnings("Duplicates")
 public  class GateWayServerImpl extends io.grpc.Server {
-    private static final Logger log = Logger.getLogger(GateWayServerImpl.class.getName());
+    private static final Logger logger = Logger.getLogger(GateWayServerImpl.class.getName());
 
     private final ObjectPool<? extends Executor> executorPool;
     /** Executor for application processing. Safe to read after {@link #start()}. */
@@ -97,6 +97,7 @@ public  class GateWayServerImpl extends io.grpc.Server {
         this.transportFilters = Collections.unmodifiableList(
                 new ArrayList<ServerTransportFilter>(builder.transportFilters));
         this.handshakeTimeoutMillis = builder.handshakeTimeoutMillis;
+
     }
 
     /**
@@ -429,7 +430,7 @@ public  class GateWayServerImpl extends io.grpc.Server {
                             message.close();
                         } catch (IOException ioException) {
                             // just log additional exceptions as we are already going to throw
-                            log.log(Level.WARNING, "Exception closing stream", ioException);
+                            logger.log(Level.WARNING, "Exception closing stream", ioException);
                         }
                     }
                     throw new RuntimeException(e);

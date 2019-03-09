@@ -37,5 +37,7 @@
     <orderEntry type="library" name="Maven: com.google.instrumentation:instrumentation-api:0.4.3" level="project" />
     <orderEntry type="library" name="Maven: io.opencensus:opencensus-api:0.10.0" level="project" />
     <orderEntry type="library" name="Maven: io.opencensus:opencensus-contrib-grpc-metrics:0.10.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing.contrib:opentracing-grpc:0.0.7" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing:opentracing-api:0.31.0" level="project" />
   </component>
 </module>
