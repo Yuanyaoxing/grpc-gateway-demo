@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.frostwolf.grpc.test";
+option java_outer_classname = "WeatherTest";
+option objc_class_prefix = "LR";
+
+package weather;
+
+// 定义服务
+service WeatherService {
+    // 服务中的方法，用于根据Week类型的参数获得一个Weather类型的返回值
+    rpc getWeatherByWeek (Week) returns (Weather) {}
+}
+//定义Name消息类型，其中name为其序列为1的字段
+message Week {
+    string name = 1;
+}
+//定义Ip消息类型，其中name为其序列为1的字段
+message Weather {
+    string name = 1;
+}
