@@ -48,7 +48,7 @@ public class WeatherClient {
     public static void main(String[] args) throws InterruptedException {
         WeatherClient client = new WeatherClient(DEFAULT_HOST, DEFAULT_PORT);
         try {
-            String weekDate = "周二";
+            String weekDate = "周三";
             String res = client.getWeatherByWeek(weekDate);
             System.out.println("get result from server: " + res + " as param is " + weekDate);
         } finally {
