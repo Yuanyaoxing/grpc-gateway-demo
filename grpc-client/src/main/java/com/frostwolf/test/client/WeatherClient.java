@@ -32,27 +32,6 @@ public class WeatherClient {
     private ManagedChannel channel;
     private Channel channel1;
     private WeatherServiceGrpc.WeatherServiceBlockingStub stub;
-    private final Tracer tracer = new Tracer() {
-        public ScopeManager scopeManager() {
-            return null;
-        }
-
-        public Span activeSpan() {
-            return null;
-        }
-
-        public SpanBuilder buildSpan(String s) {
-            return null;
-        }
-
-        public <C> void inject(SpanContext spanContext, Format<C> format, C c) {
-
-        }
-
-        public <C> SpanContext extract(Format<C> format, C c) {
-            return null;
-        }
-    };
 
     public WeatherClient(String host, int port) {
         this(NettyChannelBuilder.forAddress(host, port).negotiationType(NegotiationType.PLAINTEXT).build());
@@ -63,7 +42,7 @@ public class WeatherClient {
 
         this.channel = channel;
         logger.info("将通道与拦截器绑定起来，生成新的通道Channel");
-        this.channel1 = ClientInterceptors.intercept(channel, new ClientInterceptorImpl(), new ClientTracingInterceptor(this.tracer));
+        this.channel1 = ClientInterceptors.intercept(channel, new ClientInterceptorImpl());
         this.stub = WeatherServiceGrpc.newBlockingStub(this.channel1);
     }
 

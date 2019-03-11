@@ -2,6 +2,7 @@ com\frostwolf\grpc\test\Weather$1.class
 Server$WeatherServiceImpl.class
 com\frostwolf\grpc\test\User.class
 com\frostwolf\grpc\test\WeatherServiceGrpc$1.class
+com\frostwolf\interceptor\ServerInterceptorImpl$1.class
 Server$1.class
 com\frostwolf\grpc\test\UserOrBuilder.class
 com\frostwolf\grpc\test\WeatherServiceGrpc.class
@@ -10,6 +11,7 @@ com\frostwolf\grpc\test\WeatherTest$1.class
 com\frostwolf\grpc\test\WeatherServiceGrpc$WeatherServiceBlockingClient.class
 com\frostwolf\util\JWTUtil.class
 com\frostwolf\grpc\test\WeatherServiceGrpc$WeatherServiceBlockingStub.class
+com\frostwolf\interceptor\ServerInterceptorImpl.class
 com\frostwolf\grpc\test\User$1.class
 com\frostwolf\grpc\test\WeatherServiceGrpc$WeatherServiceStub.class
 com\frostwolf\grpc\test\WeatherServiceGrpc$MethodHandlers.class
@@ -22,6 +24,9 @@ com\frostwolf\grpc\test\Week.class
 com\frostwolf\grpc\test\Weather.class
 com\frostwolf\grpc\test\Weather$Builder.class
 com\frostwolf\grpc\test\WeatherServiceGrpc$WeatherServiceFutureClient.class
+com\frostwolf\interceptor\ServerInterceptorImpl$2.class
 Server.class
 com\frostwolf\grpc\test\User$Builder.class
+WeatherServer$1.class
+WeatherServer.class
 com\frostwolf\grpc\test\Week$Builder.class

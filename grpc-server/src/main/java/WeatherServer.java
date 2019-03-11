@@ -1,6 +1,8 @@
+import com.frostwolf.grpc.test.User;
 import com.frostwolf.grpc.test.Weather;
 import com.frostwolf.grpc.test.WeatherServiceGrpc;
 import com.frostwolf.grpc.test.Week;
+import com.frostwolf.util.JWTUtil;
 import io.grpc.BindableService;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -77,6 +79,8 @@ public class WeatherServer {
         private final Logger logger = Logger.getLogger(WeatherServiceImpl.class.getName());
 
         private Map<String, String> map = new HashMap<String, String>();
+        private final String LOGIN_NAME = "aaa";
+        private final String LOGIN_ID = "123";
 
         public WeatherServiceImpl() {
             map.put("周一", "晴天");
@@ -95,6 +99,23 @@ public class WeatherServer {
 
             responseObserver.onNext(weather);
             responseObserver.onCompleted();
+        }
+
+        @Override
+        public void login(User request, StreamObserver<User> responseObserver) {
+            logger.info("调用登录方法");
+            String userName = request.getName();
+            String id = request.getId();
+            logger.info("请求参数:name = " + userName + ";id + " + id);
+
+            if(LOGIN_NAME.equals(userName) && LOGIN_ID.equals(id)) {
+                String token = JWTUtil.sign(userName, id);
+                logger.info("登录成功，生成token = " + token);
+                User user = User.newBuilder().setId(id).setName(userName).setToken(token).build();
+
+                responseObserver.onNext(user);
+                responseObserver.onCompleted();
+            }
         }
 
         public String getWeatherByWeek(String week) {

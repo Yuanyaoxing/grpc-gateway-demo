@@ -2,7 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="842823d4-b6fd-4984-8416-06b3ab0f7faf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_grpc_0_0_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_opentracing_api_0_31_0.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-client/target/grpc-client-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-client/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-client/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/com/friddle/IChannelFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GatewayServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-gateway/target/grpc-gateway-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-gateway/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/src/main/java/Server.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/grpc-server-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/annotations.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/auth.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/backend.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/billing.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/config_change.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/consumer.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/context.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/control.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/distribution.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/documentation.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/endpoint.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/http.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/httpbody.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/label.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/log.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/logging.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/metric.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/monitored_resource.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/monitoring.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/service.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/system_parameter.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/api/usage.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/cloud/audit/audit_log.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/logging/type/http_request.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/logging/type/log_severity.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/longrunning/operations.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/rpc/code.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/rpc/error_details.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/rpc/status.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/type/color.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/type/date.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/type/dayofweek.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/type/latlng.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/type/money.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/type/postal_address.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-server/target/protoc-dependencies/ff3a30ca0be3160b8145387ec8cd81e2/google/type/timeofday.proto" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-client/target/classes/com/frostwolf/test/client/WeatherClient.class" afterPath="$PROJECT_DIR$/grpc-client/target/classes/com/frostwolf/test/client/WeatherClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ContextCloser.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ContextCloser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener$1Closed.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener$1Closed.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener$1OnReady.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener$1OnReady.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$JumpToApplicationThreadServerStreamListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$NoopListener.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$NoopListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerListenerImpl.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerListenerImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerTransportListenerImpl$1.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerTransportListenerImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerTransportListenerImpl$1ServerStreamCancellationListener.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerTransportListenerImpl$1ServerStreamCancellationListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerTransportListenerImpl$1TransportShutdownNow.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerTransportListenerImpl$1TransportShutdownNow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerTransportListenerImpl.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl$ServerTransportListenerImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl.class" afterPath="$PROJECT_DIR$/grpc-gateway/target/classes/io/grpc/internal/GateWayServerImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/target/classes/Server$1.class" afterPath="$PROJECT_DIR$/grpc-server/target/classes/Server$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/target/classes/Server$WeatherServiceImpl.class" afterPath="$PROJECT_DIR$/grpc-server/target/classes/Server$WeatherServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/target/classes/Server.class" afterPath="$PROJECT_DIR$/grpc-server/target/classes/Server.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/target/classes/WeatherServer$1.class" afterPath="$PROJECT_DIR$/grpc-server/target/classes/WeatherServer$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/target/classes/WeatherServer$WeatherServiceImpl.class" afterPath="$PROJECT_DIR$/grpc-server/target/classes/WeatherServer$WeatherServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/target/classes/WeatherServer.class" afterPath="$PROJECT_DIR$/grpc-server/target/classes/WeatherServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-ceshi.iml" afterPath="$PROJECT_DIR$/grpc-ceshi.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-client/grpc-client.iml" afterPath="$PROJECT_DIR$/grpc-client/grpc-client.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-client/src/main/java/com/frostwolf/test/client/WeatherClient.java" afterPath="$PROJECT_DIR$/grpc-client/src/main/java/com/frostwolf/test/client/WeatherClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/grpc-client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/grpc-client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/grpc-gateway.iml" afterPath="$PROJECT_DIR$/grpc-gateway/grpc-gateway.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/grpc-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/grpc-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/grpc-server.iml" afterPath="$PROJECT_DIR$/grpc-server/grpc-server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/src/main/java/WeatherServer.java" afterPath="$PROJECT_DIR$/grpc-server/src/main/java/WeatherServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/grpc-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grpc-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/grpc-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,32 +116,22 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="WeatherServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grpc-server/src/main/java/WeatherServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="105" column="34" lean-forward="false" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Start.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grpc-gateway/src/main/java/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeatherClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grpc-client/src/main/java/com/frostwolf/test/client/WeatherClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="48" column="77" lean-forward="true" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
+            <state relative-caret-position="198">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,10 +174,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/grpc-gateway/src/main/java/io/grpc/netty/GateWayServer.java" />
         <option value="$MAVEN_REPOSITORY$/io/grpc/grpc-core/1.9.0/grpc-core-1.9.0.jar!/io/grpc/internal/AbstractServerImplBuilder.class" />
-        <option value="$PROJECT_DIR$/grpc-server/src/main/java/WeatherServer.java" />
         <option value="$PROJECT_DIR$/grpc-gateway/src/main/java/Start.java" />
         <option value="$PROJECT_DIR$/grpc-gateway/src/main/java/io/grpc/internal/GateWayChannelBuilder.java" />
         <option value="$PROJECT_DIR$/grpc-client/src/main/java/com/frostwolf/test/client/WeatherClient.java" />
+        <option value="$PROJECT_DIR$/grpc-server/src/main/java/WeatherServer.java" />
       </list>
     </option>
   </component>
@@ -146,9 +224,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,32 +273,6 @@
             <path>
               <item name="grpc-gateway-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="grpc-gateway-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc-gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grpc-gateway-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-gateway-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grpc-gateway-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-gateway-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grpc-gateway-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-gateway-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grpc-gateway-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-gateway-demo" type="462c0819:PsiDirectoryNode" />
               <item name="grpc-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,7 +300,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,6 +335,20 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.WeatherClient">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="grpc-server" />
+      <envs />
+    </configuration>
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Start" />
@@ -410,16 +476,18 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.WeatherServer" />
       <item index="1" class="java.lang.String" itemvalue="Application.WeatherClient" />
       <item index="2" class="java.lang.String" itemvalue="Application.Start" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Server" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.WeatherClient" />
         <item index="1" class="java.lang.String" itemvalue="Application.Start" />
         <item index="2" class="java.lang.String" itemvalue="Application.WeatherServer" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -441,15 +509,15 @@
       <workItem from="1550543223856" duration="2867000" />
       <workItem from="1551786086596" duration="8110000" />
       <workItem from="1552116272171" duration="111000" />
+      <workItem from="1552297078020" duration="358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21660000" />
+    <option name="totallyTimeSpent" value="22018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -459,25 +527,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25746268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,6 +559,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/grpc-server/src/main/java/WeatherServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc-gateway/src/main/java/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc-client/src/main/java/com/frostwolf/test/client/WeatherClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="48" column="77" lean-forward="true" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grpc-server/src/main/proto/weather.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -593,14 +685,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grpc-client/src/main/java/com/frostwolf/test/client.java" />
-    <entry file="file://$PROJECT_DIR$/grpc-server/target/generated-sources/protobuf/grpc-java/com/frostwolf/grpc/test/WeatherServiceGrpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Set.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -723,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,26 +853,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grpc-server/src/main/java/WeatherServer.java">
+    <entry file="file://$PROJECT_DIR$/grpc-server/target/generated-sources/protobuf/grpc-java/com/frostwolf/grpc/test/WeatherServiceGrpc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="297">
+          <caret line="56" column="26" lean-forward="false" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grpc-gateway/src/main/java/Start.java">
+    <entry file="file://$PROJECT_DIR$/grpc-server/src/main/java/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="-1463">
+          <caret line="30" column="69" lean-forward="false" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc-server/src/main/java/WeatherServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="105" column="34" lean-forward="false" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc-client/src/main/java/com/frostwolf/test/client/interceptor/ClientInterceptorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grpc-client/src/main/java/com/frostwolf/test/client/WeatherClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="48" column="77" lean-forward="true" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
+        <state relative-caret-position="231">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc-gateway/src/main/java/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
