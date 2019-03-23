@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--映射文件的根节点
+  namespace
+-->
+<mapper namespace="com.frostwolf.dao.IWeatherDAO">
+    <select id="getWeatherByDate" resultType="java.lang.String" parameterType="java.lang.String">
+        select weather from weather where date = #{0} limit 1;
+    </select>
+</mapper>

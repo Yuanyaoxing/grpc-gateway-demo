@@ -4,17 +4,14 @@ import com.frostwolf.grpc.test.User;
 import com.frostwolf.grpc.test.Weather;
 import com.frostwolf.grpc.test.WeatherServiceGrpc;
 import com.frostwolf.grpc.test.Week;
+import com.frostwolf.producer.Producer;
 import com.frostwolf.test.client.interceptor.ClientInterceptorImpl;
 import io.grpc.*;
 import io.grpc.netty.NegotiationType;
 import io.grpc.netty.NettyChannelBuilder;
-import io.opentracing.ScopeManager;
-import io.opentracing.Span;
-import io.opentracing.SpanContext;
-import io.opentracing.Tracer;
-import io.opentracing.contrib.grpc.ClientTracingInterceptor;
-import io.opentracing.propagation.Format;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
@@ -27,7 +24,7 @@ import java.util.logging.Logger;
 public class WeatherClient {
     private static final Logger logger = Logger.getLogger(WeatherClient.class.getName());
     private static final String DEFAULT_HOST = "127.0.0.1";
-    private static final int DEFAULT_PORT = 50050;
+    private static final int DEFAULT_PORT = 8089;
 
     private ManagedChannel channel;
     private Channel channel1;
@@ -56,6 +53,9 @@ public class WeatherClient {
 
         Weather weather = stub.getWeatherByWeek(week);
         logger.info("请求getWeatherByWeek方法成功，返回参数 ：" + weather.getName());
+
+        logger.info("发布信息");
+        publish(weather.getName());
         return weather.getName();
     }
 
@@ -67,13 +67,19 @@ public class WeatherClient {
         return response.getToken();
     }
 
+    public static void publish(String weather) {
+        Producer producer = new Producer("localhost", 4150);
+        Map<String, Object> messageMap = new HashMap<String, Object>();
+        messageMap.put("test6", "发布从服务器更新的天气信息， weather：" + weather);
+        producer.publish(messageMap);
+    }
+
     public static void main(String[] args) throws InterruptedException {
         WeatherClient client = new WeatherClient(DEFAULT_HOST, DEFAULT_PORT);
         try {
-            String weekDate = "周二";
+            String weekDate = "周六";
             String res = client.getWeatherByWeek(weekDate);
             System.out.println("get result from server: " + res + " as param is " + weekDate);
-
 //            String res2 = client.login("aaa", "123");
         } finally {
             client.shutdown();

@@ -8,14 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="grpc-client" />
         <module name="grpc-gateway" />
+        <module name="grpc-lib" />
         <module name="grpc-server" />
+        <module name="nsq-cosumer-one" />
+        <module name="nsq-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="grpc-ceshi" target="1.5" />
-      <module name="grpc-client" target="1.5" />
-      <module name="grpc-gateway" target="1.7" />
-      <module name="grpc-server" target="1.6" />
+      <module name="mybatis" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -12,6 +12,9 @@
         <module>grpc-client</module>
         <module>grpc-server</module>
         <module>grpc-gateway</module>
+        <module>nsq-demo</module>
+        <module>nsq-cosumer-one</module>
+        <module>grpc-lib</module>
     </modules>
 
     <dependencies>
@@ -49,6 +52,65 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.3</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!--配置mybatis需要的依赖包-->
+        <dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.17.1-GA</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
     </dependencies>
 
     <properties>
@@ -56,6 +118,7 @@
         <java.version>1.8</java.version>
         <grpc.version>1.12.0</grpc.version>
         <protoc.version>3.5.1-1</protoc.version>
+        <docker.image.prefix>leesia</docker.image.prefix>
     </properties>
 
     <build>
@@ -67,6 +130,7 @@
             </extension>
         </extensions>
         <plugins>
+            <!-- 编译ptotobuff插件 -->
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
@@ -84,6 +148,24 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <!-- docker镜像打包插件 -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <dockerDirectory></dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
             </plugin>
         </plugins>
     </build>

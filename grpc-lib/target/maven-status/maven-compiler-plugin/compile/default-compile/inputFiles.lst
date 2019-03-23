@@ -1,0 +1,11 @@
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/target/generated-sources/protobuf/java/com/frostwolf/grpc/test/UserOrBuilder.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/src/main/java/frostwolf/util/NSQLookupFactory.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/target/generated-sources/protobuf/java/com/frostwolf/grpc/test/WeatherTest.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/src/main/java/frostwolf/producer/Producer.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/src/main/java/frostwolf/consumer/Consumer.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/target/generated-sources/protobuf/grpc-java/com/frostwolf/grpc/test/WeatherServiceGrpc.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/target/generated-sources/protobuf/java/com/frostwolf/grpc/test/WeatherOrBuilder.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/target/generated-sources/protobuf/java/com/frostwolf/grpc/test/WeekOrBuilder.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/target/generated-sources/protobuf/java/com/frostwolf/grpc/test/Week.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/target/generated-sources/protobuf/java/com/frostwolf/grpc/test/User.java
+/home/rob/myworkspace/grpc/grpc-gateway-demo/grpc-lib/target/generated-sources/protobuf/java/com/frostwolf/grpc/test/Weather.java

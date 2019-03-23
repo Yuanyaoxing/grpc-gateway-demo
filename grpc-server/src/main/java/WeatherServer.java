@@ -1,9 +1,13 @@
+
+import com.frostwolf.dao.IUserDAO;
+import com.frostwolf.dao.IWeatherDAO;
+import com.frostwolf.dao.impl.UserDAOImpl;
+import com.frostwolf.dao.impl.WeatherDAOImpl;
 import com.frostwolf.grpc.test.User;
 import com.frostwolf.grpc.test.Weather;
 import com.frostwolf.grpc.test.WeatherServiceGrpc;
 import com.frostwolf.grpc.test.Week;
 import com.frostwolf.util.JWTUtil;
-import io.grpc.BindableService;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
@@ -29,6 +33,9 @@ public class WeatherServer {
     private int port;//服务端口号
 
     private Server server;
+
+//    private IUserDAO userDAO = new UserDAOImpl();
+    private IWeatherDAO weatherDAO = new WeatherDAOImpl();
 
     public WeatherServer(int port) {
         this(port, ServerBuilder.forPort(port));
@@ -119,12 +126,37 @@ public class WeatherServer {
         }
 
         public String getWeatherByWeek(String week) {
-            String weather = map.get(week);
+            logger.info("根据日期获取天气， week:" + week);
+            String weather = weatherDAO.getWeatherByDate(week);
             if(null == weather) {
                 return "你猜今天天气怎么样？";
             }
+            logger.info("获取天气成功, weather:" + weather);
+
+
+
+//            logger.info("开始封装NSQ消息");
+//            //封装消息
+//            Map<String, Object> nsqMessage = new HashMap<String, Object>();
+//            nsqMessage.put("test", weather);
+//            logger.info("封装NSQ消息完毕，创建发布者");
+//            //
+//            Producer producer = new Producer("localhost", 4150);
+//            producer.publish(nsqMessage);
+//            logger.info("消息发布成功");
             return weather;
         }
+
+
+        /*public void publish() {
+            List<com.frostwolf.bean.User> users = userDAO.findAll();
+            logger.info("数据库获取用户成功 数量：" + (null == users ? 0 : users.size()));
+            Producer producer = new Producer("localhost", 4150);
+            Map<String, Object> messageMap = new HashMap<String, Object>();
+            messageMap.put("test", "没事查询了一下用户数量，总共有：" + (null == users ? 0 : users.size()));
+            producer.publish(messageMap);
+        }*/
+
     }
 
 }
